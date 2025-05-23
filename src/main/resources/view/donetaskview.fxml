@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="529.0" prefWidth="726.0" style="-fx-background-color: linear-gradient(to bottom right, #fca311, #ffbe0b);" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Donetaskview">
+   <children>
+      <Label alignment="CENTER" prefHeight="75.0" prefWidth="726.0" text="COMPLETED TASK" textFill="#001bb1">
+         <font>
+            <Font name="Calisto MT Bold" size="37.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tableCompletedTask" layoutX="70.0" layoutY="95.0" prefHeight="322.0" prefWidth="596.0">
+        <columns>
+          <TableColumn fx:id="colID" prefWidth="75.0" text="ID" />
+          <TableColumn fx:id="ColTask" prefWidth="115.199951171875" text="TASK" />
+            <TableColumn fx:id="colStatus" prefWidth="111.20001220703125" text="STATUS" />
+            <TableColumn fx:id="colStartDate" minWidth="9.5999755859375" prefWidth="94.39996337890625" text="START DATE" />
+            <TableColumn fx:id="colDeadline" minWidth="9.5999755859375" prefWidth="95.20001220703125" text="DEADLINE" />
+            <TableColumn fx:id="colEndDate" minWidth="9.5999755859375" prefWidth="103.20001220703125" text="END DATE" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
